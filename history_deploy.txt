@@ -1,0 +1,501 @@
+    1  exit
+    2  apt update
+    3  sudo apt update
+    4  sudo apt-get install build-essential git wget libssl-dev libreadline-dev libncurses5-dev zlib1g-dev m4 curl wx-common libwxgtk3.0-dev autoconf
+    5  sudo apt-get install libxml2-utils xsltproc fop unixodbc unixodbc-bin unixodbc-dev
+    6  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+    7  echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+    8  echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc
+    9  source ~/.bashrc
+   10  asdf
+   11  clear
+   12  asdf plugin-add erlang
+   13  asdf install erlang 21.3
+   14  erl
+   15  asdf local erlang 21.3
+   16  erl
+   17  asdf plugin-add elixir
+   18  asdf install elixir 1.8.2
+   19  asdf global elixir 1.8.2
+   20  erl
+   21  clear
+   22  asdf install elixir 1.8.2
+   23  asdf global elixir 1.8.2
+   24  erl
+   25  iex
+   26  clear
+   27  asdf .tool-versions
+   28  mix local.hex
+   29  node -v
+   30  node --v
+   31  node -version
+   32  node --version
+   33  node --v
+   34  nodejs --v
+   35  node -V
+   36  node --V
+   37  sudo apt install curl
+   38  curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+   39  sudo apt-get install -y nodejs
+   40  mkdir -p apps/ipr_api/secret
+   41  sudo nano ~/apps/ipr_api/secret/prod.secret.exs
+   42  cat apps/ipr_api/secret/prod.secret.exs
+   43  cd apps/ipr_api/sse
+   44  cd apps/ipr_api/secret/
+   45  sudo nano .env
+   46  clear
+   47  ls
+   48  cat .env
+   49  clear
+   50  cd
+   51  export MIX_ENV=prod
+   52  sudo nano ~/.profile
+   53  clear
+   54  clear
+   55  su deploy
+   56  clear
+   57  cd apps/ipr_api/secret/
+   58  ls
+   59  cat .env
+   60  cat prod.secret.exs
+   61  cd
+   62  cd ~/.pr
+   63  ls
+   64  cat ~/.profile
+   65  clear
+   66  exit
+   67  cd
+   68  ls
+   69  cd apps/
+   70  ls
+   71  cd
+   72  erl
+   73  clear
+   74  exit
+   75  cd
+   76  pwd
+   77  exit
+   78  cd
+   79  clear
+   80  cd .ssh/
+   81  ls
+   82  cat authorized_keys
+   83  exit
+   84  ls
+   85  cd apps/
+   86  ls
+   87  cd ipr_api/
+   88  ls
+   89  cd secret/
+   90  ls
+   91  cat .env
+   92  rm .env
+   93  cat prod.secret.exs
+   94  rm prod.secret.exs
+   95  sudo nano prod.secret.exs
+   96  clear
+   97  ls
+   98  ls -la
+   99  sudo nano .env
+  100  ls -la
+  101  clear
+  102  sudo nano ~/.profile
+  103  clear
+  104  exit
+  105  cd apps/ipr_api/
+  106  cd var/
+  107  ls
+  108  cat sys.config
+  109  cd ..
+  110  cd secret/
+  111  ls
+  112  cat prod.secret.exs
+  113  cat .env
+  114  clear
+  115  cd ..
+  116  cd var/
+  117  ls
+  118  cat sys.config
+  119  exit
+  120  cd ..
+  121  cd
+  122  cd apps/ipr_api/
+  123  ls
+  124  cd
+  125  git
+  126  clear
+  127  exit
+  128  clea
+  129  rclear
+  130  clear
+  131  ls
+  132  cd apps/ipr_api/
+  133  ls
+  134  rm -rf bin/
+  135  rm -rf erts-10.3/
+  136  rm -rf lib/
+  137  rm -rf releases/
+  138  rm -rf var
+  139  clear
+  140  ls
+  141  exit
+  142  clear
+  143  cd .ssh/
+  144  ls
+  145  cat authorized_keys
+  146  cd
+  147  cat ~/.profile
+  148  erl
+  149  iex
+  150  clear
+  151  exit
+  152  mix local.hex
+  153  clear
+  154  mix
+  155  exit
+  156  sudo nano ~/.profile
+  157  source ~/.profile
+  158  clear
+  159  exit
+  160  cd apps/ipr_api/var/
+  161  cat sys.config
+  162  exit
+  163  sudo update-locale LC_ALL=en_US.UTF-8
+  164  sudo update-locale LANGUAGE=en_US.UTF-8
+  165  exit
+  166  cd apps/ipr_api/var/
+  167  cat sys.config
+  168  exit
+  169  sudo apt update
+  170  sudo apt install -y nginx
+  171  rm /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
+  172  rm /etc/nginx/sites-enabled/default
+  173  sudo rm /etc/nginx/sites-enabled/default
+  174  sudo /etc/nginx/sites-available/default
+  175  sudo rm /etc/nginx/sites-available/default
+  176  clear
+  177  sudo nano /etc/nginx/sites-available/ssipr-api.selangor.gov.my
+  178  sudo nginx -t
+  179  sudo service nginx restart
+  180  clear
+  181  exit
+  182  sudo ufw status
+  183  sudo ufw enable
+  184  sudo ufw status
+  185  sudo ufw status -verbose
+  186  sudo ufw status verbose
+  187  sudo ufw allow ssh
+  188  sudo ufw allow http
+  189  sudo ufw allow 'Nginx HTTP'
+  190  sudo ufw allow https
+  191  sudo ufw allow 'Nginx HTTPS'
+  192  clear
+  193  exit
+  194  clear
+  195  ls
+  196  cd apps/
+  197  ls
+  198  cd ipr_api/secret/
+  199  ls
+  200  sudo nano .env
+  201  sudo nano prod.secret.exs
+  202  clear
+  203  ls
+  204  cat prod.secret.exs
+  205  lear
+  206  clear
+  207  exit
+  208  cd apps/ipr_api/var/
+  209  ls
+  210  cat sys.config
+  211  clear
+  212  cd ..
+  213  cd /etc/nginx/sites-available/
+  214  ls
+  215  cat ssipr-api.selangor.gov.my
+  216  history
+  217  cd ..
+  218  cd sites-enabled/
+  219  ls
+  220  sudo nginx -t
+  221  sudo service nginx restart
+  222  sudo ln -sf /etc/nginx/sites-available/ssipr-api.selangor.gov.my /etc/nginx/sites-enabled/ssipr-api.selangor.gov.my
+  223  sudo nginx -t
+  224  sudo service nginx restart
+  225  exit
+  226  clear
+  227  exit
+  228  clear
+  229  cd apps/ipr_api/secret/
+  230  sudo nano .env
+  231  sudo nano prod.secret.exs
+  232  clear
+  233  exit
+  234  cd apps/ipr_api/secret/
+  235  sudo nano prod.secret.exs
+  236  sudo nano .env
+  237  clear
+  238  exit
+  239  cd apps/ipr_api/
+  240  source .env
+  241  cd secret/
+  242  source .env
+  243  exit
+  244  cd apps/ipr_api/secret/
+  245  sudo nano prod.secret.exs
+  246  exit
+  247  cd apps/ipr_api/
+  248  cd secret
+  249  cat prod.secret.exs
+  250  cd ..
+  251  cd secret/
+  252  cat .env
+  253  exit
+  254  cd apps/ipr_api/secret/
+  255  cat prod.secret.exs
+  256  clear
+  257  cd apps/ipr_api/
+  258  ls
+  259  clear
+  260  cd
+  261  cd apps/ipr_api/secret/
+  262  sudo nano prod.secret.exs
+  263  clear
+  264  sudo nano .env
+  265  clear
+  266  cd
+  267  telnet
+  268  cd apps/ipr_api/secret/
+  269  sudo nano prod.secret.exs
+  270  clea
+  271  rclear
+  272  exit
+  273  cd apps/ipr_api/secret/
+  274  sudo nano prod.secret.exs
+  275  sudo nano .env
+  276  cd
+  277  exit
+  278  cat ~/.profile
+  279  cat /home/deploy/apps/ipr_api/secret/.env
+  280  ll
+  281  ll apps/
+  282  ll apps/ipr_api/var/vm.args
+  283  cat apps/ipr_api/var/vm.args
+  284  clear
+  285  cat apps/ipr_api/secret/
+  286  cat apps/ipr_api/secret/prod.secret.exs
+  287  history
+  288  clear
+  289  pwd
+  290  ls -larts
+  291  cd apps/
+  292  ll
+  293  cd ipr_api/
+  294  ll
+  295  ls releases/
+  296  ls releases/0.1.0/
+  297  clear
+  298  df -u
+  299  du -h
+  300  df
+  301  df -H
+  302  mix edeliver version production
+  303  exit
+  304  cd apps/ipr_api/
+  305  ls
+  306  cat secret/prod.secret.exs
+  307  clear
+  308  ll
+  309  cat secret/.env
+  310  cat secret/prod.secret.exs
+  311  clear
+  312  exit
+  313  cd apps/ipr_api/secret/
+  314  cat prod.secret.exs
+  315  clear
+  316  cat prod.secret.exs
+  317  exit
+  318  cd apps/ipr_api/secret/
+  319  ls
+  320  cat .env
+  321  cd apps/ipr_api/secret/
+  322  ls
+  323  cat prod.secret.exs
+  324  cat .env
+  325  exit
+  326  ls
+  327  cd apps/
+  328  cd ipr_api/secret/
+  329  ls
+  330  cat .env
+  331  sudo nano.en
+  332  sudo nano .env
+  333  clear
+  334  exit
+  335  cd apps/ipr_api/secret/
+  336  ls
+  337  cat prod.secret.exs
+  338  cat .env
+  339  cd apps/ipr_api/secret/
+  340  sudo nano .env
+  341  sudo nano prod.secret.exs
+  342  sudo nano .env
+  343  sudo nano prod.secret.exs
+  344  exit
+  345  cd apps/ipr_api/
+  346  ls
+  347  cd var/
+  348  ls
+  349  cat vm.args
+  350  ls
+  351  cat sys.config
+  352  ls
+  353  cd
+  354  ls
+  355  cd apps/
+  356  ls
+  357  cd ipr_api/
+  358  ls
+  359  cd
+  360  cd /etc/nginx/
+  361  ls
+  362  cd
+  363  cd /var/log/
+  364  ls
+  365  cd nginx/
+  366  ls
+  367  cat error.log
+  368  sudo cat error.log
+  369  clear
+  370  cd
+  371  cd apps/ipr_api/secret/
+  372  ls
+  373  sudo nano prod.secret.exs
+  374  sudo nano .env
+  375  exit
+  376  cd apps/
+  377  cd ipr_api/
+  378  ls
+  379  cd secret/
+  380  ls
+  381  sudo nano prod.secret.exs
+  382  clear
+  383  exit
+  384  cd apps/ipr_api/
+  385  ls
+  386  cd secret/
+  387  ls
+  388  cat prod.secret.exs
+  389  cat .env
+  390  sudo nano .env
+  391  exit
+  392  cd /var/log/
+  393  ls
+  394  cd nginx/
+  395  ls
+  396  cat error.log
+  397  sudo cat error.log
+  398  sudo cat access.log
+  399  exit
+  400  cd apps/ipr_api/secret/
+  401  cat .env
+  402  sudo nano prod.secret.exs
+  403  cat prod.secret.exs
+  404  exit
+  405  cd apps/ipr_api/secret/
+  406  sudo nano prod.secret.exs
+  407  sudo nano .env
+  408  cat prod.secret.exs
+  409  cat .env
+  410  sudo ufw status
+  411  sudo nano .env
+  412  sudo nano prod.secret.exs
+  413  sudo nano .env
+  414  cat prod.secret.exs
+  415  sudo nano prod.secret.exs
+  416  sudo nano .env
+  417  exit
+  418  clear
+  419  cd apps/ipr_api/secret/
+  420  sudo nano .env
+  421  sudo nano prod.secret.exs
+  422  cd /etc/nginx/sites-enabled/
+  423  ls
+  424  cat ssipr-api.selangor.gov.my
+  425  cd ..
+  426  cd sites-available/
+  427  ls
+  428  cat ssipr-api.selangor.gov.my
+  429  clear
+  430  cd
+  431  cd apps/ipr_api/secret/
+  432  cat .env
+  433  sudo nano prod.secret.exs
+  434  clear
+  435  exit
+  436  cd /etc/nginx/sites-available/
+  437  cat ssipr-api.selangor.gov.my
+  438  exit
+  439  cd apps/ipr_api/secret/
+  440  cat prod.secret.exs
+  441  sudo nano prod.secret.exs
+  442  exit
+  443  cd apps/ipr_api/secret/
+  444  pwd
+  445  sudo nano .env
+  446  cat prod.secret.exs
+  447  cat .env
+  448  sudo nano prod.secret.exs
+  449  exit
+  450  ls
+  451  cd apps/ipr_api/secret/
+  452  sudo nano prod.secret.exs
+  453  sudo nano .env
+  454  exit
+  455  cd apps/ipr_api/secret/
+  456  ls
+  457  sudo nano prod.secret.exs
+  458  exit
+  459  cd apps/ipr_api/secret/
+  460  cat prod.secret.exs
+  461  cd ..
+  462  ls
+  463  cd bin/
+  464  ls
+  465  cd ..
+  466  ls
+  467  cd ..
+  468  ls
+  469  cd ipr_api/
+  470  ls
+  471  cd lib/
+  472  ls
+  473  cd ..
+  474  cd releases/
+  475  ls
+  476  cd 0.1.0/
+  477  ls
+  478  iex -S phx
+  479  iex -S mix
+  480  iex -S mix phx.server
+  481  iex -S mix phoenix.server
+  482  cd ..
+  483  ls
+  484  cd ..
+  485  ls
+  486  cd var/
+  487  ls
+  488  cd ..
+  489  ls
+  490  cd bin/
+  491  ls
+  492  ipr_api remote_console
+  493  cd .. && bin/ipr_api remote_console
+  494  cd apps/ipr_api/secret/
+  495  cat .env
+  496  exit
+  497  hisotry
+  498  history
+  499  clear
+  500  history
+deploy@ip-172-31-19-151:/home/ubuntu$

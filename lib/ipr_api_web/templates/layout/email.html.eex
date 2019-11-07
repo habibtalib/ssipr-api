@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <p>Tuan/Puan</p>
+
+  <%= render @view_module, @view_template, assigns %>
+
+  <p>Sekian, terima kasih.</p>
+
+  <br />
+  <p>
+    Sistem Smart IPR <br />
+    Kerajaan Negeri Selangor
+  </p>
+</body>
+
+</html>

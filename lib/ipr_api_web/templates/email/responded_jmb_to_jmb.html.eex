@@ -1,0 +1,20 @@
+<p>
+  Untuk makluman anda, berikut merupakan maklumat pemohon yang telah disemak dan sedang diproses.
+</p>
+
+<p>
+  <label>Nama Pemohon:</label> <br />
+  <b><%= String.upcase(@applicant.name) %></b> <br /><br />
+
+  <label>No Telefon:</label> <br />
+  <b><%= @applicant.phone_no %></b> <br /><br />
+
+  <label>Alamat Pemohon:</label> <br />
+  <b><%= String.upcase(@address) %></b> <br /><br />
+
+  <label>Email:</label> <br />
+  <b><%= @applicant.email %></b> <br /><br />
+
+  <label>Status:</label> <br />
+  <b>DISEMAK</b> <br /><br />
+</p>

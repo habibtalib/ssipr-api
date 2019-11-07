@@ -1,0 +1,8 @@
+<p>
+  <%= @content %>
+</p>
+
+<p>
+  <label>Status:</label> <br />
+  <b><%= @status %></b> <br /><br />
+</p>

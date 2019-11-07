@@ -1,0 +1,38 @@
+<p>
+  Untuk makluman pihak anda, pemohon di bawah telah membuat permohonan Program IPR Skim Air Darul Ehsan. Butiran
+  pemohon adalah seperti berikut:
+</p>
+
+<p>
+  <label>Nama Pemohon:</label> <br />
+  <b><%= String.upcase(@applicant.name) %></b> <br /><br />
+
+  <label>No Telefon:</label> <br />
+  <b><%= @applicant.phone_no %></b> <br /><br />
+
+  <label>Alamat Pemohon:</label> <br />
+  <b><%= String.upcase(@address) %></b> <br /><br />
+
+  <label>Email:</label> <br />
+  <b><%= @applicant.email %></b> <br /><br />
+
+  <label>Status:</label> <br />
+  <b>SEDANG MENUNGGU SEMAKAN JMB</b> <br /><br />
+</p>
+
+<p>Untuk semakan, sila tekan pautan di bawah:</p>
+
+<p>
+  <a href='<%= @link %>'>
+    Klik di sini
+  </a>
+</p>
+
+<br />
+
+<p>
+  Sila berikan maklum balas dalam tempoh empat belas (14) hari bekerja atau sebelum tarikh pendaftaran ditutup, yang
+  mana terdahulu. Untuk makluman, tarikh pendaftaran akan ditutup pada 31 Disember 2019*.
+</p>
+
+<br />

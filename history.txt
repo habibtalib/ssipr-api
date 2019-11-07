@@ -1,0 +1,298 @@
+    1  clear
+    2  ls
+    3  exit
+    4  cd .ssh/
+    5  ls
+    6  cd
+    7  exit
+    8  ls
+    9  clear
+   10  cd .ssh/
+   11  pwd
+   12  cd ~/.ssh/
+   13  pwd
+   14  ls
+   15  cat authorized_keys
+   16  exit
+   17  clear
+   18  sudo nano .env
+   19  ls
+   20  clear
+   21  adduser deploy
+   22  clear
+   23  sudo -o
+   24  sudo -i
+   25  exit
+   26  clear
+   27  exit
+   28  erl
+   29  cd .ssh/
+   30  ls
+   31  cat authorized_keys
+   32  exit
+   33  su deploy
+   34  exit
+   35  su deploy
+   36  exit
+   37  su deploy
+   38  exit
+   39  ls
+   40  cd /etc/
+   41  ls
+   42  cd nginx/
+   43  ls
+   44  cd sites-enabled/
+   45  ls
+   46  sudo vi ssipr-api.selangor.gov.my
+   47  sudo /etc/init.d/nginx restart
+   48  ls
+   49  cd ..
+   50  ls
+   51  cd /var/
+   52  ls
+   53  cd log
+   54  cd nginx/
+   55  ls
+   56  tail -f error.log
+   57  tail -f access.log
+   58  cd /home/
+   59  ls
+   60  cd deploy/
+   61  ls
+   62  cd apps/
+   63  ls
+   64  cd ipr_api/
+   65  ls
+   66  cd secret/
+   67  ls
+   68  cat prod.secret.exs
+   69  echo $SMTP_USER
+   70  ls
+   71  cd ..
+   72  ls
+   73  cd var/
+   74  ls
+   75  cd ..
+   76  ls
+   77  ifconfig
+   78  exit
+   79  cd /home/deploy/
+   80  ls
+   81  cd apps/
+   82  ls
+   83  cd ipr_api/
+   84  ls
+   85  cd secret/
+   86  ls
+   87  cat prod.secret.exs
+   88  cd ..
+   89  ls
+   90  grep -R 'ssipr-api' *
+   91  vi var/sys.config
+   92  vi /home/deploy/apps/ipr_api/secret/.env
+   93  exit
+   94  cat /home/deploy/apps/ipr_api/secret/.env
+   95  cd /home/deploy/apps/ipr_api/
+   96  grep -R 'ssipr-api' *
+   97  vi .ssh/authorized_keys
+   98  sudo vi /home/deploy/.ssh/authorized_keys
+   99  cd /home/deploy/apps/
+  100  ls
+  101  cd ipr_api/
+  102  ls
+  103  cd releases/
+  104  ls
+  105  cd ..
+  106  ls
+  107  cd var/
+  108  ls
+  109  cd log/
+  110  ls
+  111  tail -f *
+  112  cd ..
+  113  ls
+  114  cd secret/
+  115  ls
+  116  vi prod.secret.exs
+  117  cd ..
+  118  ls
+  119  cd secret/
+  120  ls
+  121  ls -al
+  122  cat .env
+  123  sudo vi prod.secret.exs
+  124  cat prod.secret.exs
+  125  cd /home/deploy/
+  126  ls
+  127  cd apps/
+  128  ls
+  129  cd ipr_api/
+  130  ls
+  131  cd var/
+  132  ls
+  133  tail -f log/*
+  134  cd ..
+  135  ls
+  136  cd secret/
+  137  ls
+  138  vi prod.secret.exs
+  139  ls
+  140  cd ..
+  141  ls
+  142  cd var/
+  143  ls
+  144  vi sys.config
+  145  cd ..
+  146  cd secret/
+  147  ls
+  148  vi .env
+  149  exit
+  150  cd /home/deploy/apps/
+  151  ls
+  152  cd ipr_api/secret/
+  153  ls
+  154  cat prod.secret.exs
+  155  vi .env
+  156  exit
+  157  ls
+  158  cd /home/deploy/apps/ipr_api/secret/
+  159  ls
+  160  cat prod.secret.exs
+  161  cat .env
+  162  exit
+  163  cd /home/deploy/apps/ipr_api/secret
+  164  ls
+  165  cat prod.secret.exs
+  166  cat .env
+  167  exit
+  168  cat /home/deploy/apps/ipr_api/secret/prod.secret.exs
+  169  sudo vi /home/deploy/apps/ipr_api/secret/prod.secret.exs
+  170  sudo vi /home/deploy/apps/ipr_api/secret/.env
+  171  sudo vi /etc/nginx/sites-enabled/ssipr-api.selangor.gov.my
+  172  cd /etc/nginx/
+  173  ls
+  174  vi nginx.conf
+  175  cd conf.d/
+  176  ls
+  177  cd ..
+  178  sudo vi /home/deploy/apps/ipr_api/secret/prod.secret.exs
+  179  vi sites-enabled/ssipr-api.selangor.gov.my
+  180  cd ~
+  181  ls
+  182  cd ~/
+  183  ls
+  184  ls -al
+  185  cd /home/
+  186  ls
+  187  cd deploy/
+  188  ls
+  189  cd apps/
+  190  ls
+  191  exit
+  192  cat /home/deploy/apps/ipr_api/secret/prod.secret.exs
+  193  cat /home/deploy/apps/ipr_api/secret/.env
+  194  cd /home/deploy/apps/ipr_api/secret
+  195  ls
+  196  exit
+  197  ssh deploy@13.251.147.9
+  198  ls
+  199  cd /var/www/se
+  200  cd /var/www/html/
+  201  ls
+  202  cd ..
+  203  cd  /home/deploy/apps/ipr_api/secret/.
+  204  ls
+  205  cd bu
+  206  ls
+  207  cd ..
+  208  ls
+  209  cd ..
+  210  ls
+  211  mysql
+  212  vim /home/deploy/apps/ipr_api/secret/.env
+  213  ls
+  214  cd /
+  215  ls
+  216  cd home
+  217  ls
+  218  cd ubuntu
+  219  ;s
+  220  ls
+  221  cd ..
+  222  ls
+  223  cd de
+  224  cd deploy/
+  225  ls
+  226  cd apps/
+  227  l
+  228  ls
+  229  cd ipr_api/
+  230  ls
+  231  cd /
+  232  ls
+  233  cd var
+  234  ls
+  235  cd log
+  236  ls
+  237  cd nginx/
+  238  ls
+  239  nano error.log
+  240  ls
+  241  cd /home/deploy/apps/ipr_api
+  242  ls
+  243  cd var/
+  244  ls
+  245  cd erl_pipes/
+  246  ls
+  247  cd ipr_api@127.0.0.1/
+  248  ls
+  249  exit
+  250  ls
+  251  cd /home/deploy/apps/ipr_api/var/erl_pipes/ipr_api@127.0.0.1
+  252  ls
+  253  cd ..
+  254  ls
+  255  cd ..
+  256  ls
+  257  cd log/
+  258  ls
+  259  tail run_erl.log
+  260  tail erlang.log.1
+  261  cd ..
+  262  ls
+  263  cd ..
+  264  ls
+  265  cd releases/
+  266  ls
+  267  cd ..
+  268  cd lib/
+  269  ls
+  270  cd ..
+  271  ls
+  272  cd secret/
+  273  ls
+  274  vim prod.secret.exs
+  275  vim build
+  276  ls -la
+  277  vim .env
+  278  vim prod.secret.exs
+  279  vim /home/deploy/apps/ipr_api/secret/.env
+  280  iex -S mix phx.server
+  281  cd ..
+  282  ls
+  283  cd ..
+  284  ls
+  285  cd ipr_api/
+  286  ls
+  287  cd bin/
+  288  l
+  289  ls
+  290  vim ipr_api_rc_exec.sh
+  291  vim ipr_api.bat
+  292  ls -la
+  293  vim start_clean.boot
+  294  sh ipr_api_rc_exec.sh
+  295  history
+  296  clear
+  297  history
+ubuntu@ip-172-31-19-151:/home/deploy/apps/ipr_api/bin$

@@ -1,0 +1,7 @@
+<p>
+  Sila klik pautan dibawah untuk membuat penetapan semula kata laluan akaun anda.
+</p>
+
+<p>
+  <a href="<%= @link %>">Tukar Kata Laluan</a>
+</p>

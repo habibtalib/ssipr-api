@@ -1,0 +1,7 @@
+<p>
+  Anda perlu membuat pengesahan akaun untuk memohon sebarang program IPR. Sila klik pautan dibawah untuk membuat
+  pengesahan akaun.
+</p>
+<p>
+  <a href="<%= @link %>">Buat Pengesahan</a>
+</p>
