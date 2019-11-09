@@ -48,13 +48,13 @@ defmodule IprApi.IPRApplicant.Residence do
   def individual_changeset(residence, attrs) do
     residence
     |> cast(attrs, [:meter_type, :individual_meter_acc_no, :ownership_status])
-    |> validate_required([:meter_type])
+    # |> validate_required([:meter_type])
     |> unique_constraint(:individual_meter_acc_no)
   end
 
   def bulk_changeset(residence, attrs) do
     residence
     |> cast(attrs, [:meter_type, :bulk_meter_acc_no, :ownership_status])
-    |> validate_required([:meter_type])
+    # |> validate_required([:meter_type])
   end
 end
