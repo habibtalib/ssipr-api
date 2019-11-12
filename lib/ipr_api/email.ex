@@ -92,6 +92,9 @@ defmodule IprApi.Email do
     applicant = application.applicant
     status = Naming.humanize(application.status)
     email = if applicant.rep_email, do: applicant.rep_email, else: applicant.email
+    subject = "[IPRSADE#{application.id}] PERMOHONAN PROGRAM IPR SKIM AIR DARUL EHSAN - #{
+        String.upcase(applicant.name)
+      }"
 
     content =
       if application.residence.meter_type == "pukal" && application.by_admin == false do
@@ -104,9 +107,29 @@ defmodule IprApi.Email do
     |> to(email)
     |> cc("iprair@airselangor.com")
     |> subject(
-      "[IPRSADE#{application.id}] PERMOHONAN PROGRAM IPR SKIM AIR DARUL EHSAN - #{
+      subject
+    )
+    |> render("new_air_selangor.html",
+      content: content,
+      status: String.upcase(status)
+    )
+  end
+
+  def new_ipr(application) do
+    applicant = application.applicant
+    status = Naming.humanize(application.status)
+    email = if applicant.rep_email, do: applicant.rep_email, else: applicant.email
+    subject = "[IPRKISS#{application.id}] PERMOHONAN PROGRAM IPR KASIH IBU SMART SELANGOR - #{
         String.upcase(applicant.name)
       }"
+
+    content = "Dengan hormatnya, ingin dimaklumkan, Permohonan Program IPR KASIH IBU SMART SELANGOR anda telah diterima dan sedang diproses."
+
+    base()
+    |> to(email)
+    # |> cc("iprair@airselangor.com")
+    |> subject(
+      subject
     )
     |> render("new_air_selangor.html",
       content: content,

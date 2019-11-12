@@ -32,7 +32,11 @@ defmodule IprApiWeb.DocketController do
       docket = Repo.preload(docket, [:applicant])
       docket = Repo.preload(docket, applicant: [:spouses, :childrens])
 
-      applicant_email = IprApi.Email.new_air_selangor(docket)
+      if docket.ipr_code == "AIR_SELANGOR" do
+        applicant_email = IprApi.Email.new_ipr(docket)
+      else
+        applicant_email = IprApi.Email.new_ipr(docket)
+      end
       IprApi.Mailer.deliver_later(applicant_email)
 
       if docket.residence.meter_type == "pukal" do
