@@ -5,11 +5,18 @@ defmodule IprApiWeb.DocketView do
   alias Elixlsx.{Workbook, Sheet}
 
   @row_headers [
+    "User ID",
     "ID Doket Permohonan",
     "Jenis Meter",
     "Tarikh",
     "ID Pemohon",
+    "No Akaun Air Individu",
+    "No Akaun Air Pukal",
+    "Status Pemilikan (Pemilik/Penyewa)",
     "Nama Pemohon",
+    "Alamat Penuh Pemohon",
+    "Emel pemohon",
+    "No HP pemohon",
     "Status"
   ]
 
@@ -87,11 +94,18 @@ defmodule IprApiWeb.DocketView do
 
   def row(docket) do
     [
+      docket.applicant.id,
       "SADE#{docket.id}",
       docket.residence.meter_type,
       Timex.format!(docket.inserted_at, "%d-%m-%Y", :strftime),
       docket.applicant.ic,
+      docket.residence.individual_meter_acc_no,
+      docket.residence.bulk_meter_acc_no,
+      docket.residence.ownership_status
       docket.applicant.name,
+      "#{docket.applicant.address_1}, #{docket.applicant.address_2} #{docket.applicant.address_3}, #{docket.applicant.postcode}, #{docket.applicant.state}" ,
+      docket.applicant.email,
+      docket.applicant.phone_no,
       Atom.to_string(docket.status)
     ]
   end

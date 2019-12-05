@@ -12,8 +12,8 @@ STAGING_HOSTS="18.139.224.38" # staging / test hosts separated by space
 STAGING_USER="deploy" # local user at staging hosts
 TEST_AT="/home/deploy/apps"
 
-# PRODUCTION_HOSTS="13.251.147.9"
-PRODUCTION_HOSTS="18.139.224.38"
+PRODUCTION_HOSTS="13.251.147.9"
+# PRODUCTION_HOSTS="18.139.224.38"
 PRODUCTION_USER="deploy"
 DELIVER_TO="/home/deploy/apps"
 

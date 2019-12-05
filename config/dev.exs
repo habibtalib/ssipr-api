@@ -2,9 +2,13 @@ use Mix.Config
 
 # Configure your database
 config :ipr_api, IprApi.Repo,
+  # username: "sttdevssipr",
+  # password: "sttdevssipr2019",
+  database: "ssipr",
   username: "postgres",
   password: "postgres",
-  database: "ssipr",
+  # hostname: "ssipr.cmrigkuiwsue.ap-southeast-1.rds.amazonaws.com",
+  # hostname: "ssipr-dev.cmrigkuiwsue.ap-southeast-1.rds.amazonaws.com",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -17,7 +21,6 @@ config :ipr_api, IprApi.Repo,
 # with webpack to recompile .js and .css sources.
 config :ipr_api, IprApiWeb.Endpoint,
   http: [port: 4000],
-  secret_key_base: "QeDSf6w6wtfuXjuDEMM6hhl6oJH35zd5SHulwIC2H7txeihnLhIfUJheSgRmswOE",
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
