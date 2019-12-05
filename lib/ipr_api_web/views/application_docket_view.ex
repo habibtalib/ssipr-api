@@ -101,7 +101,7 @@ defmodule IprApiWeb.DocketView do
       docket.applicant.ic,
       docket.residence.individual_meter_acc_no,
       docket.residence.bulk_meter_acc_no,
-      docket.residence.ownership_status
+      docket.residence.ownership_status,
       docket.applicant.name,
       "#{docket.applicant.address_1}, #{docket.applicant.address_2} #{docket.applicant.address_3}, #{docket.applicant.postcode}, #{docket.applicant.state}" ,
       docket.applicant.email,
