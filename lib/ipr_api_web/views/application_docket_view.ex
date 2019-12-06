@@ -94,7 +94,7 @@ defmodule IprApiWeb.DocketView do
 
   def row(docket) do
     [
-      docket.applicant.id,
+      docket.applicant.email,
       "SADE#{docket.id}",
       docket.residence.meter_type,
       Timex.format!(docket.inserted_at, "%d-%m-%Y", :strftime),
