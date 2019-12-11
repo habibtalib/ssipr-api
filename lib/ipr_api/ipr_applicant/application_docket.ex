@@ -96,6 +96,11 @@ defmodule IprApi.IPRApplicant.Docket do
     where(query, [docket], fragment("?::date", docket.inserted_at) <= ^td)
   end
 
+  defp compose_query({"ipr_code", ipr_code}, query) do
+    where(query, [docket], ilike(docket.ipr_code, ^"%#{ipr_code}%"))
+  end
+
+
   defp compose_query(_unsupported_param, query) do
     query
   end
