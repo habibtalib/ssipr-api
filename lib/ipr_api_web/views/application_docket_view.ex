@@ -93,6 +93,23 @@ defmodule IprApiWeb.DocketView do
   end
 
   def row(docket) do
+    if docket.by_admin do
+    [
+      'air_sel_00',
+      "SADE#{docket.id}",
+      docket.residence.meter_type,
+      Timex.format!(docket.inserted_at, "%d-%m-%Y", :strftime),
+      docket.applicant.ic,
+      docket.residence.individual_meter_acc_no,
+      docket.residence.bulk_meter_acc_no,
+      docket.residence.ownership_status,
+      docket.applicant.name,
+      "#{docket.applicant.address_1}, #{docket.applicant.address_2} #{docket.applicant.address_3}, #{docket.applicant.postcode}, #{docket.applicant.state}" ,
+      docket.applicant.email,
+      docket.applicant.phone_no,
+      Atom.to_string(docket.status)
+    ]
+    else 
     [
       docket.applicant.email,
       "SADE#{docket.id}",
@@ -108,5 +125,6 @@ defmodule IprApiWeb.DocketView do
       docket.applicant.phone_no,
       Atom.to_string(docket.status)
     ]
+    end
   end
 end
