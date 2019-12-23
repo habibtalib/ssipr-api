@@ -65,7 +65,6 @@ defmodule IprApi.Account.Applicant do
   ]
 
   @required_when_create [
-    :email,
     :rep_email,
     :name,
     :ic,
