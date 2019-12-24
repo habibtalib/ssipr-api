@@ -58,14 +58,16 @@ defmodule IprApi.Account.Applicant do
     :education_level,
     :other_education_level,
     :gender,
+    :phone_no,
     :dob,
     :pob,
     :religion,
+    :rep_email,
+    :email,
     :other_religion
   ]
 
   @required_when_create [
-    :rep_email,
     :name,
     :ic,
     :ic_type,
