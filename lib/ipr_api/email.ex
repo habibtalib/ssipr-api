@@ -26,7 +26,7 @@ defmodule IprApi.Email do
     base()
     |> to(jmb_email)
     |> subject(
-      "[IPRSADE#{application.id}] SEMAKAN MAKLUMAT PEMOHON BAGI PERMOHONAN SKIM AIR DARUL EHSAN - #{
+      "[IPR#{application.id}] SEMAKAN MAKLUMAT PEMOHON BAGI PERMOHONAN SKIM AIR DARUL EHSAN - #{
         String.upcase(applicant.name)
       }"
     )
@@ -45,7 +45,7 @@ defmodule IprApi.Email do
     base()
     |> to(jmb_email)
     |> subject(
-      "[IPRSADE#{application.id}] PEMBERITAHUAN SEMAKAN PERMOHONAN PROGRAM SKIM AIR DARUL EHSAN - #{
+      "[IPR#{application.id}] PEMBERITAHUAN SEMAKAN PERMOHONAN PROGRAM SKIM AIR DARUL EHSAN - #{
         String.upcase(applicant.name)
       }"
     )
@@ -63,7 +63,7 @@ defmodule IprApi.Email do
     |> to(jmb_email)
     |> cc("iprair@airselangor.com")
     |> subject(
-      "[IPRSADE#{application.id}] PEMBERITAHUAN SEMAKAN PERMOHONAN PROGRAM SKIM AIR DARUL EHSAN - #{
+      "[IPR#{application.id}] PEMBERITAHUAN SEMAKAN PERMOHONAN PROGRAM SKIM AIR DARUL EHSAN - #{
         String.upcase(applicant.name)
       }"
     )
@@ -81,7 +81,7 @@ defmodule IprApi.Email do
     |> to(applicant.email)
     |> cc("iprair@airselangor.com")
     |> subject(
-      "[IPRSADE#{application.id}] STATUS SEMAKAN MAKLUMAT PEMOHON OLEH PIHAK JMB - #{
+      "[IPR#{application.id}] STATUS SEMAKAN MAKLUMAT PEMOHON OLEH PIHAK JMB - #{
         String.upcase(jmb_name)
       }"
     )
@@ -92,7 +92,7 @@ defmodule IprApi.Email do
     applicant = application.applicant
     status = Naming.humanize(application.status)
     email = if applicant.rep_email, do: applicant.rep_email, else: applicant.email
-    subject = "[IPRSADE#{application.id}] PERMOHONAN PROGRAM IPR SKIM AIR DARUL EHSAN - #{
+    subject = "[IPR#{application.id}] PERMOHONAN PROGRAM IPR SKIM AIR DARUL EHSAN - #{
         String.upcase(applicant.name)
       }"
 
