@@ -256,6 +256,7 @@ defmodule IprApi.Account.Applicant do
     |> validate_length(:password, min: 6)
     |> validate_confirmation(:password)
     |> unique_constraint(:email)
+    |> unique_constraint(:phone_no)
     |> unique_constraint(:ic, name: :profil_pkey)
   end
 
