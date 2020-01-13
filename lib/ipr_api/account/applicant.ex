@@ -89,6 +89,7 @@ defmodule IprApi.Account.Applicant do
   ]
 
   @allowed_when_update [
+    :name,
     :home_no,
     :address_2,
     :address_3,
