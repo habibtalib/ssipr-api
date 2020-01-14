@@ -6,8 +6,8 @@ defmodule IprApiWeb.ApplicantController do
 
   action_fallback IprApiWeb.FallbackController
 
-  def index(conn, _params) do
-    applicants = Account.list_applicants()
+  def index(conn, params) do
+    applicants = Account.list_applicants(params)
     render(conn, "index.json", applicants: applicants)
   end
 

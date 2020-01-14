@@ -20,9 +20,12 @@ defmodule IprApi.Account do
       [%Applicant{}, ...]
 
   """
-  def list_applicants do
-    Repo.all(Applicant)
-    |> Repo.preload([:childrens, :spouses, :dockets])
+  def list_applicants(params) do
+    # Repo.all(Applicant)
+    Applicant.search(Applicant, params)
+    |> preload([:childrens, :spouses, :dockets])
+    |> order_by(desc: :inserted_at)
+    |> Repo.paginate(params)
   end
 
   @doc """

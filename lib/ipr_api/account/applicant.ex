@@ -2,6 +2,7 @@ defmodule IprApi.Account.Applicant do
   use Ecto.Schema
 
   import Ecto.Changeset
+  import Ecto.Query
 
   alias IprApi.Repo
   alias IprApi.Account.Applicant
@@ -187,6 +188,37 @@ defmodule IprApi.Account.Applicant do
     |> generate_password_hash
     |> cast_assoc(:childrens, required: false)
     |> cast_assoc(:spouses, required: false)
+  end
+
+  def search(query, params) do
+    base_query(query)
+    |> build_query(params)
+  end
+
+  defp base_query(query) do
+    from(applicant in query)
+  end
+
+  defp build_query(query, params) do
+    Enum.reduce(params, query, &compose_query/2)
+  end
+
+  defp compose_query({"ic", ic}, query) do
+    where(query, [applicant], ilike(applicant.ic, ^"%#{ic}%"))
+  end
+
+  defp compose_query({"from_date", from_date}, query) do
+    fd = Date.from_iso8601!(from_date)
+    where(query, [applicant], fragment("?::date", applicant.inserted_at) >= ^fd)
+  end
+
+  defp compose_query({"to_date", to_date}, query) do
+    td = Date.from_iso8601!(to_date)
+    where(query, [applicant], fragment("?::date", applicant.inserted_at) <= ^td)
+  end
+
+  defp compose_query(_unsupported_param, query) do
+    query
   end
 
   def update_changeset(applicant, attrs) do
