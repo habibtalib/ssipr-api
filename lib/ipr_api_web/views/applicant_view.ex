@@ -3,7 +3,13 @@ defmodule IprApiWeb.ApplicantView do
   alias IprApiWeb.ApplicantView
 
   def render("index.json", %{applicants: applicants}) do
-    %{data: render_many(applicants, ApplicantView, "applicant.json")}
+    %{data: render_many(applicants, ApplicantView, "applicant.json"),
+      pagination: %{
+            page_number: applicants.page_number,
+            page_size: applicants.page_size,
+            total_pages: applicants.total_pages,
+            total_entries: applicants.total_entries
+          }}
   end
 
   def render("show.json", %{applicant: applicant}) do
