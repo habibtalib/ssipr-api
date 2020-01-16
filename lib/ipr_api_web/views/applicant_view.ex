@@ -53,7 +53,8 @@ defmodule IprApiWeb.ApplicantView do
       verified_account: applicant.verified_account,
       dockets: applicant.dockets,
       childrens: applicant.childrens,
-      spouses: applicant.spouses
+      spouses: applicant.spouses,
+      inserted_at: Timex.format!(applicant.inserted_at, "%d-%m-%Y", :strftime),
     }
   end
 end
