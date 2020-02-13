@@ -14,7 +14,11 @@ defmodule IprApiWeb.DocketView do
     "No Akaun Air Pukal",
     "Status Pemilikan (Pemilik/Penyewa)",
     "Nama Pemohon",
-    "Alamat Penuh Pemohon",
+    "Alamat 1",
+    "Alamat 2",
+    "Alamat 3",
+    "Poskod",
+    "Negeri",
     "Emel pemohon",
     "No HP pemohon",
     "Status"
