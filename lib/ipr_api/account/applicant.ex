@@ -96,7 +96,8 @@ defmodule IprApi.Account.Applicant do
     :address_3,
     :other_education_level,
     :other_religion,
-    :other_district
+    :other_district,
+    :phone_no
   ]
 
   @required_when_update [
