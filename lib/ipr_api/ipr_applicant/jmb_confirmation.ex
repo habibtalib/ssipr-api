@@ -55,10 +55,5 @@ defmodule IprApi.IPRApplicant.JMBConfirmation do
       :jmb_email,
       :remark
     ])
-    |> validate_required([
-      :jmb_name,
-      :jmb_email,
-      :tele_no
-    ])
   end
 end
