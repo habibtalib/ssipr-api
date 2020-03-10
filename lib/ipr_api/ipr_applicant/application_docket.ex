@@ -51,7 +51,7 @@ defmodule IprApi.IPRApplicant.Docket do
       end
 
     docket
-    |> cast(attrs, [:ipr_code, :data])
+    |> cast(attrs, [:ipr_code, :data, :status])
     |> validate_required([:ipr_code])
     |> cast_assoc(:residence, required: false, with: residence_changeset)
     |> cast_assoc(:jmb_confirmation, required: false)
