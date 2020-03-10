@@ -66,7 +66,7 @@ defmodule IprApi.IPRApplicant.Docket do
       required: true,
       with: &Residence.bulk_changeset/2
     )
-    |> cast_assoc(:jmb_confirmation, required: true)
+    |> cast_assoc(:jmb_confirmation, required: false)
   end
 
   def search(query, params) do
