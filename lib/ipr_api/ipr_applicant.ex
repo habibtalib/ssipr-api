@@ -91,9 +91,15 @@ defmodule IprApi.IPRApplicant do
 
   """
   def update_docket(%Docket{} = docket, attrs) do
-    docket
-    |> Docket.jmb_changeset(attrs)
-    |> Repo.update()
+   if attrs["residence"]["meter_type"] == "pukal" do
+      docket
+      |> Docket.jmb_changeset(attrs)
+      |> Repo.update()
+    else
+      docket
+      |> Docket.changeset(attrs)
+      |> Repo.update()
+    end
   end
 
   @doc """

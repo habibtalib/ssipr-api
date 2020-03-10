@@ -99,11 +99,14 @@ defmodule IprApiWeb.DocketController do
 
     with {:ok, %Docket{} = docket} <-
            IPRApplicant.update_docket(docket, docket_params) do
-      jmb_email = IprApi.Email.responded_jmb_to_jmb(docket)
-      applicant_email = IprApi.Email.responded_jmb_to_applicant(docket)
+            
+      if docket_params["residence"]["meter_type"] == "pukal" do
+        jmb_email = IprApi.Email.responded_jmb_to_jmb(docket)
+        applicant_email = IprApi.Email.responded_jmb_to_applicant(docket)
 
-      IprApi.Mailer.deliver_later(jmb_email)
-      IprApi.Mailer.deliver_later(applicant_email)
+        IprApi.Mailer.deliver_later(jmb_email)
+        IprApi.Mailer.deliver_later(applicant_email)
+      end 
 
       render(conn, "show.json", docket: docket)
     end

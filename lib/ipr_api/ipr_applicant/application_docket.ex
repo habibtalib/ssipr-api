@@ -28,7 +28,7 @@ defmodule IprApi.IPRApplicant.Docket do
     field :status, Enums.DocketStatusEnum, default: "diterima_dan_sedang_diproses"
     field :data, :map
 
-    has_one :residence, Residence, foreign_key: :docket_id
+    has_one :residence, Residence, foreign_key: :docket_id, on_replace: :update
     has_one :jmb_confirmation, JMBConfirmation, foreign_key: :docket_id
 
     belongs_to :applicant, Applicant,
